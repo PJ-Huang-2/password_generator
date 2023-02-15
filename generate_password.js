@@ -12,7 +12,7 @@ function generatePassword() {
     lowercase: "on",
     uppercase: "on",
     numbers: "on",
-    excludeCharacters: "04",
+    excludeCharacters: "40",
   };
 
   // create a collection to store things user picked up
@@ -37,17 +37,19 @@ function generatePassword() {
   // remove things user don't need
   if (options.excludeCharacters) {
     console.log(`exclude characters: ${options.excludeCharacters}`);
-    collection = collection.filter((character) => {
-      // if the character includes in 'excludeCharacters',
-      // return false to remove the character in the collection
+    collection = collection.filter(
+      (character) => !options.excludeCharacters.includes(character)
+    );
+    // if the character includes in 'excludeCharacters',
+    // return false to remove the character in the collection
 
-      if (options.excludeCharacters.includes(character) === true) {
+    /* if (options.excludeCharacters.includes(character) === true) {
         return false;
         // otherwise, return true to keep characters in collection
       } else {
         return true;
-      }
-    });
+      } */
+    // return
   }
   console.log("collection", collection);
 
