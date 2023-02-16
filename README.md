@@ -1,21 +1,21 @@
 # password_generator
 
 # function
-A password generator that can be configured according to your decision.
-You can choose the passwords includes:
--password length 
--lowercase letter
--uppercase letter
--numbers
--symbols
+A password generator that can be configured according to your decision. <br>
+You can choose the passwords includes:<br>
+-password length <br>
+-lowercase letter<br>
+-uppercase letter<br>
+-numbers<br>
+-symbols<br>
 
 # Environmental construction and requirements
-Visual Studio Code-1.57.1
-Node.js
-npm-6.4.1
-Express
-Express-Handlebars
-nodemon
+Visual Studio Code-1.57.1<br>
+Node.js<br>
+npm-6.4.1<br>
+Express<br>
+Express-Handlebars<br>
+nodemon<br>
 
 ## Installing - Project installation process
 
